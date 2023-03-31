@@ -77,7 +77,7 @@ namespace Win95Keygen
         public static string RandomDivisibleBy7()
         {
             Random rand = new Random();
-            int i = rand.Next(1,10);
+            int i = rand.Next(1,3);
             string output = "31584"; //By fallback or else VS 2008 errors out
             if (i == 1)
             {
@@ -85,39 +85,11 @@ namespace Win95Keygen
             }
             else if (i == 2)
             {
-                output = "57778";
+                output = "39207";
             }
             else if (i == 3)
             {
-                output = "67676";
-            }
-            else if (i == 4)
-            {
-                output = "73787";
-            }
-            else if (i == 5)
-            {
-                output = "88529";
-            }
-            else if (i == 6)
-            {
-                output = "31724";
-            }
-            else if (i == 7)
-            {
-                output = "39578";
-            }
-            else if (i == 8)
-            {
-                output = "39207";
-            }
-            else if (i == 9)
-            {
-                output = "93443";
-            }
-            else if (i == 10)
-            {
-                output = "69167";
+                output = "77777";
             }
             return output;
         }
