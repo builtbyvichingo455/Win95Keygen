@@ -89,6 +89,7 @@
             this.Text = "Windows 95 Key Generator";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.PerformLayout();
 
         }
