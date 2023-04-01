@@ -22,56 +22,24 @@ namespace Win95Keygen
         }
         private static string GenerateKey()
         {
-            //Generate day from 100 to 365
+            //Generate day from 100 to 366
             Random rand;
             rand = new Random();
-            int day = rand.Next(100,365);
+            int day = rand.Next(100,366);
+            
             //Generate year
-            rand = new Random();
-            int i = rand.Next(1,9);
-            string year = "95";
-            if (i == 1)
-            {
-                year = "95";
-            }
-            else if (i == 2)
-            {
-                year = "96";
-            }
-            else if (i == 3)
-            {
-                year = "97";
-            }
-            else if (i == 4)
-            {
-                year = "98";
-            }
-            else if (i == 5)
-            {
-                year = "99";
-            }
-            else if (i == 6)
-            {
-                year = "00";
-            }
-            else if (i == 7)
-            {
-                year = "01";
-            }
-            else if (i == 8)
-            {
-                year = "02";
-            }
-            else if (i == 9)
-            {
-                year = "03";
-            }
+            string[] yeararray = { "95", "96", "97", "98", "99", "00", "01", "02", "03" };
+            int index = rand.Next(yeararray.Length);
+            string year = yeararray[index];
+            
             //Static numbers divisible by 7
             string divisibleby7 = RandomDivisibleBy7();
             //Random numbers
             rand = new Random();
             int randomnumbers = rand.Next(10000,99999);
             //Make the windows 95 key output
+            
+            //TODO: Use "0XXXXXX" instead of "00XXXXX"
             return day.ToString() + year + "-OEM-" + "00" + divisibleby7 + "-" + randomnumbers.ToString();
         }
         public static string RandomDivisibleBy7()
