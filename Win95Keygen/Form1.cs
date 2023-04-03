@@ -45,20 +45,9 @@ namespace Win95Keygen
         public static string RandomDivisibleBy7()
         {
             Random rand = new Random();
-            int i = rand.Next(1,3);
-            string output = "31584"; //By fallback or else VS 2008 errors out
-            if (i == 1)
-            {
-                output = "31584";
-            }
-            else if (i == 2)
-            {
-                output = "39207";
-            }
-            else if (i == 3)
-            {
-                output = "77777";
-            }
+            string[] yeararray = { "31584", "39207", "77777", "13811", "97408", "65908", "34421", "96526", "82121" };
+            int index = rand.Next(yeararray.Length);
+            string output = yeararray[index];
             return output;
         }
     }
