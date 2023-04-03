@@ -6,7 +6,7 @@ We implemented it in this little tool which is also easy to use.
 ## Usage
 Using this tool is easy, just run it and press the "Generate" button to enjoy a Windows 95 key.
 ![image](https://user-images.githubusercontent.com/59311016/229126177-29e59d13-553c-41fc-96b6-0f1f806e4aee.png)
-
+If you don't want to download the keygen, you can use the online version [here](https://replit.com/@Vichingo455/Windows-95-Keygen?v=1)
 
 ## Compiling
 Compiling this tool is not so difficult. Here's how.
